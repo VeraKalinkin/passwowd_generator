@@ -19,23 +19,23 @@ def password(flag, count, answer):
 
 
 def create_flag(flag):
-    print('Использовать цифры? да/нет')
-    if input() == 'нет':
+    print("Use numbers? y/n")
+    if input() == 'n':
         flag[0] = 1
-    print('Использовать строчные буквы? да/нет')
-    if input() == 'нет':
+    print("Use lowercase letters? y/n")
+    if input() == 'n':
         flag[1] = 1
-    print('Использовать заглавные буквы? да/нет')
-    if input() == 'нет':
+    print("Use uppercase letters? y/n")
+    if input() == 'n':
         flag[2] = 1
-    print('Использовать символы? да/нет')
-    if input() == 'нет':
+    print("Use punctuation? y/n")
+    if input() == 'n':
         flag[3] = 1
     return flag
 
 
 def main():
-    print('Введите длину пароля:')
+    print("What should be the length of your password?")
     count = int(input())
     flag = [0, 0, 0, 0]
     answer = []

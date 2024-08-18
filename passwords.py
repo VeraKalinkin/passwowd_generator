@@ -33,6 +33,7 @@ def create_flag(flag):
         flag[3] = 1
     return flag
 
+def main():
 print('Введите длину пароля:')
 count = int(input())
 flag = [0, 0, 0, 0]

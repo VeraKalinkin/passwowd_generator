@@ -44,5 +44,4 @@ def main():
     random.shuffle(answer)
     print(*answer)
 
-
 main()

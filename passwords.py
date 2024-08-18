@@ -33,15 +33,11 @@ def create_flag(flag):
         flag[3] = 1
     return flag
 
-
-def main():
-    print('Введите длину пароля:')
-    count = int(input())
-    flag = [0, 0, 0, 0]
-    answer = []
-    flag = create_flag(flag)
-    answer = password(flag, count, answer)
-    random.shuffle(answer)
-    print(*answer)
-
-main()
+print('Введите длину пароля:')
+count = int(input())
+flag = [0, 0, 0, 0]
+answer = []
+flag = create_flag(flag)
+answer = password(flag, count, answer)
+random.shuffle(answer)
+print(*answer)
